@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h3>Persons</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-haver">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>names</th>
+                        <th>lastnames</th>
+                        <th>actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let person of persons" class="text-center">
+                        <td>{{person.id}}</td>
+                        <td>{{person.names}}</td>
+                        <td>{{person.lastnames}} </td>
+                        <td>
+                            <button class="btn btn-warning">edit</button>
+                            <button class="btn btn-danger" style="margin-left: 10px;">delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

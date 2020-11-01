@@ -1,0 +1,23 @@
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-header">
+      <h3> Add Persons</h3>
+    </div>
+
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+          <label for="txtNames">Names:</label>
+          <input id="txtNames" type="text" name="names"
+          [(ngModel)]="person.names" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="txtLastNames">Last Names:</label>
+          <input id="txtLastNames" type="text" name="lastnames"
+            [(ngModel)]="person.lastnames" class="form-control">
+        </div>
+        <button (click)="save()" class="btn btn-danger">Save</button>
+      </form>
+    </div>
+  </div>
+</div>
